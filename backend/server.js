@@ -7,9 +7,6 @@ const getRealData = (data) => {
 
 websocekt.getRealTimeData(getRealData);
 
-
-
-
 exports = module.exports = server = (io) => {
     io.on('connection', (socket) => {
         console.log(`--- A socket ${socket.id} connected! ---`);

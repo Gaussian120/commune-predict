@@ -14,7 +14,7 @@ import Dashboard from './pages/Dashboard';
 import Hot from './pages/Hot';
 import Long from './pages/Long';
 import Short from './pages/Short';
-import History from './pages/History';
+// import History from './pages/History';
 import SettingLong from './pages/SettingLong';
 import SettingShort from './pages/SettingShort';
 
