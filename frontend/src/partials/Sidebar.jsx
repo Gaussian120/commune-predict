@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SidebarLinkGroup from './SidebarLinkGroup';
-import logo from '../images/logo.png';
+// import logo from '../images/CubesShufflingGIF.gif';
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
   const location = useLocation();
@@ -80,9 +80,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           </button>
           {/* Logo */}
           <NavLink end to="/" className="flex flex-row items-center ">
-            
-            {/* <img src={logo} className='w-[300px]'></img> */}
-            <span className="text-center text-md  dark:text-blue-100 font-bold font-[sans-serif] mb-1 text-[20px]">Gaussian Predict</span>
+            {/* <img src={logo} className='w-[100px]'></img> */}
+            <span className="text-center text-md  dark:text-blue-100 font-bold font-[sans-serif] mb-1 text-[20px]">Comscanner</span>
           </NavLink>
         </div>
 
