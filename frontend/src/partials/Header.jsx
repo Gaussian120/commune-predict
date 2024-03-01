@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
 import Modal from "antd/es/modal/Modal";
-import { Button, Flex } from 'antd';
+import { Button, Flex, Spin } from 'antd';
 import { ApiPromise, WsProvider } from "@polkadot/api";
 import MetaMaskImage from "../../public/svg/metamask.svg";
 import PolkadotImage from "../../public/svg/subwallet.png";
@@ -16,12 +16,8 @@ function Header({ sidebarOpen, setSidebarOpen }) {
   const [isShowSubstrateConnectModalOpen, setIsShowSubstrateConnectModalOpen] = useState(false)
   const [address, setAddress] = useState('');
   const [balance, setBalance] = useState(null);
-
-  //user login
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [isShowSubstrateAuth, setIsShowSubstrateAuth] = useState(false)
-
-  // state of the scroll position and header height
   const [scrollPosition, setScrollPosition] = useState(0);
   const [headerHeight, setHeaderHeight] = useState(20);
 
@@ -164,15 +160,16 @@ function Header({ sidebarOpen, setSidebarOpen }) {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center mt-4 hover:bg-gray-300 p-2 rounded-md w-[330px]" style={{ flexDirection: 'column', border: '1px solid gray' }}>
+            <div className="flex flex-col mt-4 hover:bg-gray-300 rounded-md w-[330px]" style={{ flexDirection: 'column', border: '1px solid gray' }}>
               {
                 isShowSubstrateAuth ?
                   <>
-                    <button onClick={connectToSubstrate} className="bg-blue-400 rounded-lg shadow-lg hover:shadow-2xl text-center hover:bg-blue-500 duration-200 text-white hover:text-white font-sans font-semibold justify-center px-2 py-2 hover:border-blue-300 hover:border-2 hover:border-solid cursor-pointer">Connect to Substrate</button>
+                    <button onClick={connectToSubstrate} className="w-[80%] m-auto mt-2 bg-blue-400 rounded-lg shadow-lg hover:shadow-2xl text-center hover:bg-blue-500 duration-200 text-white hover:text-white font-sans font-semibold justify-center px-2 py-2 hover:border-blue-300 hover:border-2 hover:border-solid cursor-pointer">Connect to Substrate</button>
                     {
-                      chainInfo && nodeName &&
-                      <div className="flex items-center justify-evenly mt-4">
-                        Connected to chain &nbsp;<span className="text-cyan-500" style={{ fontStyle: 'italic' }}>{chainInfo}&nbsp;</span> using &nbsp;<span className="text-cyan-500" style={{ fontStyle: 'italic' }}>&nbsp;{nodeName}</span>
+                      // chainInfo && nodeName &&
+                      <div className="flex flex-col  justify-evenly mt-4">
+                        <label className="ml-[10px] font-bold"> chainInfo &nbsp;&nbsp;:&nbsp; &nbsp; {chainInfo}</label>
+                        <label className="ml-[10px] font-bold"> nodeName :&nbsp; &nbsp; {nodeName}</label>
                       </div>
                     }
                     <div className="flex flex-col">
