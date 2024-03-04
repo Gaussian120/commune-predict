@@ -17,12 +17,12 @@ const routes = [
     name: 'HotSignal',
   },
   {
-    path: '/app/settings-billing',
+    path: '/app/long',
     icon: <CurrencyDollarIcon className={iconClasses}/>,
     name: 'LongSignal',
   },
   {
-    path: '/app/settings-billing',
+    path: '/app/short',
     icon: <CurrencyDollarIcon className={iconClasses}/>,
     name: 'ShortSignal',
   },

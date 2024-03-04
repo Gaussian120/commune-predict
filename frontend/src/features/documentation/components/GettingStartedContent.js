@@ -27,7 +27,6 @@ function GettingStartedContent(){
                   <li><a href="https://daisyui.com/" target="_blank">Daisy UI v4.4.19</a></li>
                   <li><a href="https://heroicons.com/" target="_blank">HeroIcons v2.0.13</a></li>
                   <li><a href="https://redux-toolkit.js.org/" target="_blank">Redux toolkit v1.9.0</a></li>
-                  <li><a href="https://react-chartjs-2.js.org/" target="_blank">React ChartJS 2 v5.0.1</a></li>
               </ul>
               <h4>Major features - </h4>
               <p className=''>Almost all major UI components are available in Daisy UI library. Apart from this logic has been added for following - </p>
@@ -38,7 +37,7 @@ function GettingStartedContent(){
                   <li> Store management using <span className='font-bold'>redux toolkit</span></li>
                   <li> <span className='font-bold'>Daisy UI</span> components</li>
                   <li> <span className='font-bold'>Right and left sidebar</span>, Universal loader, notifications and other components</li>
-                  <li> React <span className='font-bold'>chart js 2</span> examples</li>
+                  
               </ul>
               
 
@@ -92,14 +91,6 @@ function GettingStartedContent(){
                         <button className="btn btn-primary">Button</button>
                   </div>
                 </div>
-
-
-
-                   {/* Chart JS */}
-              <h2 id="getstarted5">Chart JS</h2>
-                 <p>
-                 Chart JS library has rich components of different charts available. It is based on  <a href="https://www.chartjs.org/" target="_blank" alt=""> Chart.js</a> library, the most popular charting library. We have added this library and added couple of examples in seperate page.
-                 </p>
 
 
 

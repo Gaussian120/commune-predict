@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "binance-icons": "^0.5.1",
+    "react-number-format": "^5.3.3",
+    "socket.io-client": "^4.7.4"
+  }
+}
